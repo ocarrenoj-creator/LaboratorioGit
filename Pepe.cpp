@@ -1,18 +1,21 @@
 #include <iostream>
 #include <fstream>
-
+#include <sstream>
 using namespace std;
 
 int main() {
-    ifstream archivo("input/archivoentrada.txt.txt");
+    ifstream archivo("input/archivoentrada.txt");
 
-    string linea;
 
+if (archivoentrada.is_open()){
+	cout << "Archivo Abierto" << endl;
+	
+    string linea;	
     while(getline(archivo, linea)){
         cout << linea << endl;
-    }
+    }}
 
-    archivo.close();
+    archivoentrada.close();
 
     return 0;
 }
